@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #F0FFFF; /* Pale blue-green */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background: linear-gradient(to right, #FFB6C1, #87CEEB); /* Gradient from pastel pink to light green */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 20px;
+    margin-left: 30px;
+    color: #fff;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px; /* Adjust top value to position the circles */
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  .circle1 {
+    background-color: #87CEEB; /* Soft blue */
+  }
+  
+  .circle2 {
+    background-color: #FFB6C1; /* Light pink */
+    margin: 0 50px; /* Increase margin value to separate the circles */
+  }
+  
+  .circle3 {
+    background-color: #98FB98; /* Light green */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
